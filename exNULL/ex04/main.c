@@ -1,4 +1,4 @@
-void	rush(int x, int y);
+void	rush(int width, int height);
 
 int	main(void)
 {
