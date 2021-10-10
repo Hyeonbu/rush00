@@ -1,38 +1,38 @@
 void ft_putchar(char c);
 
-int 	rush(int width, int height)
+int 	rush(int x, int y)
 {
-	int x;
-	int y;
+	int width;
+	int height;
 
-	if (width <= 0 || height <= 0)
+	if (x <= 0 || y <= 0)
 		return (0);
-	y = 1;
-	while (y <= height)
+	height = 1;
+	while (height <= y)
 	{
-		x = 1;
-		if (y == 1 || y == height)
-			while (x <= width)
+		width = 1;
+		if (height == 1 || height == y)
+			while (width <= x)
 			{
-				if (x == 1 || x == width)
+				if (width == 1 || width == x)
 					ft_putchar('o');
 				else
 					ft_putchar('-');
-				x++;
+				width++;
 			}
 		else
 		{
-			while (x <= width)
+			while (width <= x)
 			{
-				if ( x == 1 || x == width)
+				if ( width == 1 || width == x)
 					ft_putchar('|');
 				else
 					ft_putchar(' ');
-				x++;
+				width++;
 			}
 		}
 		ft_putchar('\n');
-		y++;
+		height++;
 	}
 	return (0);
 }
