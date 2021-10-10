@@ -1,12 +1,12 @@
 void	ft_putchar(char c);
 
-int	rush(int x, int y)
+void	rush(int x, int y)
 {
 	int	width;
 	int	height;
 
 	if (x <= 0 || y <= 0)
-		return (0);
+		return ;
 	height = 0;
 	while (++height <= y)
 	{
@@ -25,5 +25,4 @@ int	rush(int x, int y)
 			ft_putchar(' ');
 		ft_putchar('\n');
 	}
-	return (0);
 }
